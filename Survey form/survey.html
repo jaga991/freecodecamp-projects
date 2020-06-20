@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="survey.css">
+</head>
+<body>
+	<h1 id="title" class="text-content">Title</h1>
+	<p class="text-content">short caption intro</p>
+	<form id="survey-form">
+		<div class="form-container">
+			<label for="name" id="name-label">Name</label>
+			<input type="text" name="" id="name" placeholder="Enter your name" required>
+		</div>
+
+		<div class="form-container">
+			<label for="email" id="email-label">Email</label>
+			<input type="email" name="" id="email" placeholder="Enter your email" required>
+		</div>
+
+		<div class="form-container">
+			<label for="number" id="number-label">Age<span>_(optional)</span></label>
+			<input type="number" name="" id="number" placeholder="Enter your age">
+		</div>
+
+		<div class="form-container"> <!-- dropdown -->
+			<label for="dropdown">Dropdown option</label>
+			<select id="dropdown" name="">
+				<option value="option1">Option 1</option>
+				<option value="option2">Option 2</option>
+				<option value="option3">Option 3</option>
+			</select>
+		</div>
+
+		<div class="form-container"> <!-- Only one selectable from multiple options (gender) -->
+			<p>Gender</p>
+			<div class="gender-container">
+				<label for="male" >
+					<input type="radio" name="gender" value="male" id="male" class="input-radio">Male
+				</label>
+			</div>
+			<div class="gender-container">
+				<label for="female">
+					<input type="radio" name="gender" value="female" id="female" class="input-radio">Female
+				</label>
+			</div>
+			<div class="gender-container">
+				<label for="other">
+					<input type="radio" name="gender" value="other" id="other" class="input-radio">Other
+				</label>
+			</div>
+		</div>
+
+		<div class="form-container"><!--multiple selectable from multiple options-->
+			<p>Multiple choice option</p>
+
+			<div class="item-container">
+				<label>
+					<input type="checkbox" name="" value="item1" id="" class="input-checkbox">Item 1
+				</label>
+			</div>
+			<div class="item-container">
+				<label>
+					<input type="checkbox" name="" value="item2" id="" class="input-checkbox">Item 2
+				</label>
+			</div>
+			<div class="item-container">
+				<label>
+					<input type="checkbox" name="" value="item3" id="" class="input-checkbox">Item 3
+				</label>
+			</div>
+		</div>
+
+		<div class="form-container"><!--Comment and suggestions-->
+			<label for="">Any other comments or suggestions</label>
+			<textarea></textarea>
+		</div>
+
+		<div class="form-container">
+			<button type="submit" id="submit" class="submit-button">Submit
+			</button>
+		</div>
+
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+
+
+.text-content { /*h1 and its caption alignment */
+	text-align: center;
+}
+
+#title {
+	font-family: helvetica;
+}
+
+/* Forms */
+
+#survey-form {
+	border-width: 5px;
+	border-style: solid;
+	width: 60%;
+	margin: 0 auto 0 auto;
+}
+
+.form-container {
+	margin: 5px; 5px; 5px; 5px;
+}
+
+input, select, textarea {
+	display: block;
+	margin-top: 3px;
+}
+
+.input-radio, .input-checkbox {
+	display: inline-block;
+}
+
+.gender-container {
+	margin: 5px 5px 5px 5px;
+}
